@@ -1,9 +1,11 @@
 import React from "react";
+import Navigation from "../components/Navigation";
 
 const About = () => {
   return (
     <div>
-      <h1>APropos</h1>
+      <Navigation />
+      <h1>A Propos</h1>
       <br />
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quia
