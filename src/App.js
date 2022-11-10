@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
+import Blog from "./pages/Blog";
 import Home from "./pages/Home";
 
 const App = () => {
@@ -9,7 +10,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/*" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        {/* path="*" fonctionne si jamais l'url ne correspond à rien de déclaré au dessus */}
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
